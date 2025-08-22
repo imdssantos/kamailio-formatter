@@ -1,0 +1,43 @@
+{
+  "name": "kamailio-formatter",
+  "displayName": "Kamailio Formatter",
+  "publisher": "Douglas Santos",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "activationEvents": [
+    "onLanguage:kamailio"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "kamailio",
+        "extensions": [
+          ".cfg"
+        ],
+        "aliases": [
+          "Kamailio"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kamailio",
+        "scopeName": "source.kamailio",
+        "path": "./syntaxes/kamailio.tmLanguage.json"
+      }
+    ],
+    "configuration": {},
+    "formatters": []
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vsce": "^2.15.0",
+    "vscode": "^1.1.37"
+  }
+}
