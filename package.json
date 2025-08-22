@@ -1,10 +1,14 @@
 {
   "name": "kamailio-formatter",
   "displayName": "Kamailio Formatter",
-  "publisher": "Douglas Santos",
+  "publisher": "DouglasSantos",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.88.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imdssantos/kamailio-formatter.git"
   },
   "activationEvents": [
     "onLanguage:kamailio"
